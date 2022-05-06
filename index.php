@@ -8,19 +8,19 @@
 
 <div class="container">
 
-    <form class="text-center form-groupe" action="insert.php" method="get">
+    <form class="text-center form-groupe" action="insert.php" method="post">
     
 
     <label for="nom">Votre nom:</label>
     <input class="form-control  my-2" type="text" name="nom" id="nom"/>
 
-    <label for="nom">Votre prénon:</label>
-    <input class="form-control  my-2" type="text" name="idee" id="idee"/>
+    <label for="prenom">Votre prénom:</label>
+    <input class="form-control  my-2" type="text" name="prenom" id="prenom"/>
 
     <label for="code_postal">Votre code postal:</label>
     <input class="form-control  my-2" type="text" name="code_postal" id="code_postal"/>
 
-    <label for="celibataire">Coché cette case si vous vous branler a cause de votre celibat:</label>
+    <label for="celibataire">Coché cette case si vous vous masturber a cause de votre celibat:</label>
     <input class="form-control  my-2" type="checkbox" name="celibataire" id="celibataire"/>
 
     <label for="salaire">Veuilliez indiquer votre salaire en Dh:</label>
