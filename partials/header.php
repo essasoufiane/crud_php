@@ -22,7 +22,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="#">page 1</a>
+                    <a class="nav-link" href="enregistrement.php">enregistrement</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Page 2</a>
