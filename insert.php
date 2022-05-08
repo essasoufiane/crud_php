@@ -2,27 +2,33 @@
 
 // var_dump($_POST);
 
-if (!empty($_POST["nom"] && $_POST["prenom"] && $_POST["code_postal"] && $_POST["celibataire"] && $_POST["salaire"] && $niveau = $_POST["niveau"])) {
-    $plane = htmlspecialchars($_POST["nom"]);
-    $prenon = htmlspecialchars($_POST["prenom"]);
-    $code_postal = $_POST["code_postal"];
-    $celibataire = $_POST["celibataire"];
-    $salaire = $_POST["salaire"];
-    $photo = $_POST["photo"];
-    $niveau = $_POST["niveau"];
+if ((!empty($_POST["nom"] && $_POST["prenom"] && $_POST["code_postal"] && $_POST["celibataire"] && $_POST["salaire"] && $niveau = $_POST["niveau"])) && (preg_match("#^[0-9]{5}$#",$_POST['code_postal']))) {
+
+            $plane = htmlspecialchars($_POST["nom"]);
+            $prenon = htmlspecialchars($_POST["prenom"]);
+            $code_postal = intval($_POST["code_postal"]);
+            $celibataire = $_POST["celibataire"];
+            $salaire = $_POST["salaire"];
+            $photo = $_POST["photo"];
+            $niveau = $_POST["niveau"];
+        
+    
+      
+
+    
 }else{
     header("Location: index.php");
     // echo "vous devez mettre nom";
 }
 
 
-var_dump(gettype(intval($prenon)));
-var_dump(gettype($prenon));
-var_dump(is_int(intval($code_postal)));
-var_dump(is_int($code_postal));
-var_dump(is_int(intval($salaire)));
-var_dump(is_int($salaire));
-
+var_dump(is_string(intval($_POST["nom"])));
+var_dump(is_string($prenon));
+var_dump(gettype(intval($code_postal)));
+var_dump(is_string($code_postal));
+var_dump(gettype(intval($salaire)));
+var_dump(gettype($salaire));
+echo $salaire;
 // je stock la date et l'heure actuelle dans une variable
 $date_creation = date('d-m-y h:i:s');
 
