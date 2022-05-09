@@ -31,7 +31,7 @@ $req->closeCursor(); // coupe la connection avec la bdd
     <main class="container">
 
 
-        <h1 class="p-4 my-5 bg-info text-white text-center">Liste des joueurs GTA RP </h1>
+        <h1 class="p-4 my-5 bg-info text-white text-center">Liste des traitres volontaire</h1>
 
 
         <table class="table table-hover text-center">

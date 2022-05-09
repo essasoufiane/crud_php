@@ -12,19 +12,19 @@
     
 
     <label for="nom">Votre nom:</label>
-    <input class="form-control  my-2" type="text" name="nom" id="nom"/>
+    <input class="form-control  my-2" type="text" name="nom" id="nom" placeholder="Karim"/>
 
     <label for="prenom">Votre prénom:</label>
-    <input class="form-control  my-2" type="text" name="prenom" id="prenom"/>
+    <input class="form-control  my-2" type="text" name="prenom" id="prenom" placeholder="Zerbib"/>
 
     <label for="code_postal">Votre code postal:</label>
-    <input class="form-control  my-2" type="text" name="code_postal" id="code_postal"/>
+    <input class="form-control  my-2" type="text" name="code_postal" id="code_postal" placeholder="13000"/>
 
     <label for="celibataire">Coché cette case si vous vous masturber a cause de votre celibat:</label>
     <input class="form-control  my-2" type="checkbox" name="celibataire" id="celibataire"/>
 
     <label for="salaire">Veuilliez indiquer votre salaire en Dh:</label>
-    <input class="form-control  my-2" type="text" name="salaire" id="salaire"/>
+    <input class="form-control  my-2" type="text" name="salaire" id="salaire" placeholder="30000Dh"/>
 
     <br>
     <label for="avatar">Mettez votre photo de traitre:</label>
