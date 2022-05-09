@@ -26,9 +26,11 @@
     <label for="salaire">Veuilliez indiquer votre salaire en Dh:</label>
     <input class="form-control  my-2" type="text" name="salaire" id="salaire"/>
 
-    <label for="photo">La photo de votre face de traitre:</label>
-    <input class="form-control  my-2" type="text" name="photo" id="photo"/>
-
+    <br>
+    <label for="avatar">Mettez votre photo de traitre:</label>
+    <input type="file" id="avatar" name="photo" accept="image/png, image/jpeg">
+<br>
+<br>
     <label for="niveau">Veuilliez indiquer votre niveau de loyauter envers Macron 1er:</label>
     <input class="form-control  my-2" type="range" name="niveau" id="niveau"/>
     

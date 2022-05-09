@@ -26,6 +26,7 @@ $req->closeCursor(); // coupe la connection avec la bdd
 </head>
 
 <body>
+<?php require_once "partials/header.php" ?>
 
     <main class="container">
 
@@ -44,6 +45,7 @@ $req->closeCursor(); // coupe la connection avec la bdd
                     <th scope="col">photo</th>
                     <th scope="col">niveau</th>
                     <th scope="col">date_creation</th>
+                    <th scope="col">Supprimer</th>
                 </tr>
             </thead>
             <tbody>
@@ -54,9 +56,16 @@ $req->closeCursor(); // coupe la connection avec la bdd
                         <td> <?= $game['code_postal'] ?></td>
                         <td> <?= $game['celibataire'] ?></td>
                         <td> <?= $game['salaire'] ?> &euro;</td>
-                        <td> <?= $game['photo'] ?></td>
+                        <td><img style="max-width: 150px; max-height: auto ;" src="<?= $game['photo'] ?>" alt="photo"> </td>
                         <td> <?= $game['loyauter'] ?></td>
                         <td> <?= $game['date-creation'] ?></td>
+                        <td>
+                        <form action="delete.php" method="post" 
+                            onSubmit="return confirm('Êtes-vous certain ?')">
+                            <input hidden type="text" name="gameID" value="<?= $game['id_user'] ?>">
+                        <button class="btn" type="submit">X</button>
+                        </form>
+                        </td>
 
                     </tr>
                 <?php endforeach; ?>
